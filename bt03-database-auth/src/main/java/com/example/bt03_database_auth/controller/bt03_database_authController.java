@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class bt03_database_authController {
 
+    @GetMapping("/")
+    public String home() {
+        return "Xin chào! Hệ thống Spring Security Database Authentication đang hoạt động bình thường.";
+    }
+
     @GetMapping("/admin/hello")
     public String adminAccess() {
         return "Xin chào ADMIN! Bạn đã truy cập thành công khu vực quản trị.";
